@@ -19,7 +19,7 @@ const Header = () =>
 
     const changeTo = router.locale === 'en' ? 'zh_tw' : 'en';
 
-    const [navbar, setNavbar] = useState(false);
+    const [navbar, setNavbar] = useState<boolean>(false);
 
     return (
       <div>
@@ -66,17 +66,17 @@ const Header = () =>
                 <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                   <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                     <Link href="/" onClick={() => setNavbar(!navbar)}>
-                      <button>{t('about')}</button>
+                      <button>{t('header:about')}</button>
                     </Link>
                   </li>
                   <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                     <Link href="/" onClick={() => setNavbar(!navbar)}>
-                      <button>{t('product')}</button>
+                      <button>{t('header:product')}</button>
                     </Link>
                   </li>
                   <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                     <Link href="/" onClick={() => setNavbar(!navbar)}>
-                      <button>{t('contact')}</button>
+                      <button>{t('header:contact')}</button>
                     </Link>
                   </li>
                   <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
@@ -85,7 +85,9 @@ const Header = () =>
                       locale={changeTo}
                       onClick={() => setNavbar(!navbar)}
                     >
-                      <button>{t('language-choice', { changeTo })}</button>
+                      <button>
+                        {t('header:language-choice', { changeTo })}
+                      </button>
                     </Link>
                   </li>
                 </ul>

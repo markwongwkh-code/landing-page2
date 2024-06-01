@@ -7,23 +7,40 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 type Props = {
-  // Add custom props here
+  // custom props here, if any
 };
 
 const Home = () => {
   return (
     <>
       <Header />
-      <div className="w-full md:w-1/2">
+      <div className="w-full">
         <Image
+          className="md:w-1/2"
+          src={HomepagePoster}
+          alt="HomepagePoster"
+          width="10000"
+          height="1000"
+        />
+        <Image
+          className="md:w-1/2"
+          src={HomepagePoster}
+          alt="HomepagePoster"
+          width="10000"
+          height="1000"
+        />
+        <Image
+          className="md:w-1/2"
           src={HomepagePoster}
           alt="HomepagePoster"
           width="10000"
           height="1000"
         />
       </div>
+      <Footer />
     </>
   );
 };
@@ -32,7 +49,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
   locale,
 }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'en', ['header'])),
+    ...(await serverSideTranslations(locale ?? 'en', ['header', 'footer'])),
   },
 });
 
