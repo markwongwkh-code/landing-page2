@@ -1,6 +1,19 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import '@/styles/globals.css';
+import type { AppProps } from 'next/app';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import { appWithTranslation } from 'next-i18next';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const App = ({ Component, pageProps }: AppProps) => {
+  return (
+    <>
+      <div className="bg-white">
+        {/* <Header /> */}
+        <Component {...pageProps} />
+        {/* <Footer /> */}
+      </div>
+    </>
+  );
+};
+
+export default appWithTranslation(App);
