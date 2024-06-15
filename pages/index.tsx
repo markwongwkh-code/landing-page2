@@ -14,7 +14,7 @@ type Props = {
 };
 
 const Home = () => {
-  const { t } = useTranslation(['common']);
+  const { t } = useTranslation(['common', 'homepage']);
   const router = useRouter();
 
   const handleImageClick = () => {
@@ -26,7 +26,7 @@ const Home = () => {
       <Header />
       <div className="w-full">
         <Image
-          className="pt-10 w-full"
+          className="pt-14 w-full"
           src={HomepagePoster}
           alt="HomepagePoster"
         />
@@ -41,15 +41,11 @@ const Home = () => {
               className="px-4 pb-8 md:w-1/2 md:py-0"
               src={HomepagePoster}
               alt="HomepagePoster"
-              // width="10000"
-              // height="1000"
             />
             <Image
               className="px-4 md:w-1/2 md:border-l-2"
               src={HomepagePoster}
               alt="HomepagePoster"
-              // width="10000"
-              // height="1000"
             />
           </div>
           <div className="py-4 items-center justify-center md:h-auto md:flex">
@@ -57,15 +53,11 @@ const Home = () => {
               className="px-4 pb-8 md:w-1/2 md:py-0"
               src={HomepagePoster}
               alt="HomepagePoster"
-              // width="10000"
-              // height="1000"
             />
             <Image
               className="px-4 md:w-1/2 md:border-l-2"
               src={HomepagePoster}
               alt="HomepagePoster"
-              // width="10000"
-              // height="1000"
             />
           </div>
         </div>
