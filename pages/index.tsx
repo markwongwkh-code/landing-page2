@@ -1,4 +1,4 @@
-import HomepagePoster from '../public/HomepagePoster_1680x706.jpg';
+import HomepagePoster from '../public/images/HomepagePoster_1680x706.jpg';
 import Image from 'next/image';
 
 import Link from 'next/link';
@@ -22,9 +22,9 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className="bg-black flex flex-col flex-grow min-h-screen">
       <Header />
-      <div className="w-full">
+      <div className="bg-white w-full text-black">
         <Image
           className="pt-14 w-full"
           src={HomepagePoster}
@@ -76,9 +76,9 @@ const Home = () => {
             />
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </>
+    </div>
   );
 };
 

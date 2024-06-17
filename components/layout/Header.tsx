@@ -39,14 +39,14 @@ const Header = () =>
                   >
                     {navbar ? (
                       <Image
-                        src="/white-cross.png"
+                        src="/images/white-cross.png"
                         width={30}
                         height={30}
                         alt="logo"
                       />
                     ) : (
                       <Image
-                        src="/white-hamburger-menu.png"
+                        src="/images/white-hamburger-menu.png"
                         width={30}
                         height={30}
                         alt="logo"
@@ -70,7 +70,7 @@ const Header = () =>
                     </Link>
                   </li>
                   <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                    <Link href="/" onClick={() => setNavbar(!navbar)}>
+                    <Link href="/Product" onClick={() => setNavbar(!navbar)}>
                       <button>{t('header:product')}</button>
                     </Link>
                   </li>

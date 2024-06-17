@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import Menu1 from '../public/images/bread-menu-p1.jpg';
+import Menu2 from '../public/images/bread-menu-p2.jpg';
+import Menu3 from '../public/images/bread-menu-p3.jpg';
 
 import Link from 'next/link';
 import type { GetServerSideProps, InferGetServerSidePropsType } from 'next';
@@ -13,22 +16,32 @@ type Props = {
   // custom props here, if any
 };
 
-const About = () => {
-  const { t } = useTranslation(['common', 'about']);
+const Product = () => {
+  const { t } = useTranslation(['common', 'product']);
 
   return (
     <div className="bg-black flex flex-col flex-grow min-h-screen">
       <Header />
       <div>
-        <div className="bg-white pt-14 pb-96 w-full text-black">
-          <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:px-8">
+        <div className="bg-white pt-14 w-full text-black">
+          <div className="px-8 mx-auto lg:max-w-7xl">
             <div className="pt-10 pb-2">
-              <div className="py-6 text-4xl">
-                <b>{t('about:about-us')}</b>
+              <div className="py-6 text-4xl text-center">
+                <b>{t('product:product')}</b>
               </div>
-              <div className="text-xl">
-                {/* <p>{t('about:description')}</p> */}
-                <Trans i18nKey={`about:description`} />
+
+              <div className="flex flex-col justify-center items-center py-4 md:h-auto">
+                <Image
+                  className="px-4 py-4 w-full border-b-2"
+                  src={Menu1}
+                  alt="Menu"
+                />
+                <Image
+                  className="px-4 py-4 w-full border-b-2"
+                  src={Menu2}
+                  alt="Menu"
+                />
+                <Image className="px-4 py-4 w-full" src={Menu3} alt="Menu" />
               </div>
             </div>
           </div>
@@ -46,9 +59,9 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
     ...(await serverSideTranslations(locale ?? 'en', [
       'header',
       'footer',
-      'about',
+      'product',
     ])),
   },
 });
 
-export default About;
+export default Product;
