@@ -23,7 +23,7 @@ const About = () => {
         <div className="bg-white pt-14 pb-96 w-full text-black">
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:px-8">
             <div className="pt-10 pb-2">
-              <div className="py-6 text-4xl">
+              <div className="py-6 text-4xl text-center">
                 <b>{t('about:about-us')}</b>
               </div>
               <div className="text-xl">

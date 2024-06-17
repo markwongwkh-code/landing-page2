@@ -75,7 +75,7 @@ const Header = () =>
                     </Link>
                   </li>
                   <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                    <Link href="/" onClick={() => setNavbar(!navbar)}>
+                    <Link href="/Contact" onClick={() => setNavbar(!navbar)}>
                       <button>{t('header:contact')}</button>
                     </Link>
                   </li>

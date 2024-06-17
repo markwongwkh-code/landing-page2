@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <ul className="md:h-auto items-center justify-center">
           <div className="text-xl text-white py-2 md:px-6 border-b-2 md:border-b-0">
-            <Link href="/">
+            <Link href="/RegistrationAndLicense">
               <button>{t('footer:registration-and-license')}</button>
             </Link>
           </div>

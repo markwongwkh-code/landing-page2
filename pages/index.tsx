@@ -18,7 +18,7 @@ const Home = () => {
   const router = useRouter();
 
   const handleImageClick = () => {
-    router.push('/abc');
+    router.push('/Product');
   };
 
   return (
