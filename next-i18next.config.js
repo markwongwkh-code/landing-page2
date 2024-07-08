@@ -4,4 +4,5 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en', 'zh_tw'],
   },
+  localePath: path.resolve('./public/locales'),
 };
