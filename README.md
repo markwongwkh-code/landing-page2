@@ -22,4 +22,6 @@ npm i
 npm run dev
 ```
 
+## Disclaimer
+
 This repository is for demo purpose only. All data included is testing data. It has no relation with any person or company.
