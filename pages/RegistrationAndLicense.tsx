@@ -31,7 +31,7 @@ const RegistrationAndLicense = () => {
     <div className="bg-black flex flex-col flex-grow min-h-screen">
       <Header />
       <div>
-        <div className="bg-white pt-14 pb-96 w-full text-black">
+        <div className="bg-white pt-14 pb-96 w-full text-black overflow-x-scroll">
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:px-8">
             <div className="pt-10 pb-2">
               <div className="py-6 text-4xl text-center">
