@@ -2,7 +2,14 @@
 
 This is a landing page project using Next.js with Typescript.
 
-next-i18next is used to handle system translation between English and Chinese.
+Website consist of the follow pages:
+1. About
+2. Contact
+3. Home
+4. Product
+5. Registration And License
+
+This webpage supports translation. next-i18next is used to handle system translation between English and Chinese.
 
 This website is deployed in AWS Amplify with custom domain. Github is used as version control system.
 
